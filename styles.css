@@ -1,0 +1,287 @@
+body{
+    background: rgb(211, 222, 213);
+    color: antiquewhite;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* HEADER */
+
+header{
+    background: black;
+    background-image: url("images/space.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    height: 400px;
+    text-align: center; 
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .mobile{
+    display: none;
+}
+
+header .logo a{
+    background-image: url("images/home.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    top: -30px;
+    text-indent: -9999999px;
+    width: 300px;
+}
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width:740px) {
+    header{
+        height: 200px;
+    }
+    header .mobile{
+        display: inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    header{
+        height: 200px;
+        background-position: 0 -50px;
+    }
+}
+
+/* FEATURES */
+
+.features{
+    background: white;
+    color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.features figure img{
+    border: 1px solid white;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: grey 5px 5px 10px;
+}
+
+.features figure a{
+    text-decoration: none;
+}
+
+.features figure a:visited{
+    color: goldenrod;
+}
+
+.hide{
+    display: none;
+}
+
+#checklist{
+    color: black;
+}
+
+li input{
+    display: none;
+}
+
+li.edit span{
+    display: none;
+}
+
+li.edit input{
+    display: initial;
+}
+
+
+/* locations CSS */
+.backgroundLoc{
+    margin-top: 20px;
+    height: 200px;
+    background-color: rgb(226, 226, 226);
+}
+
+.Fun{
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+.btnArray{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+button.btn{
+    padding: 15px 10px;
+    margin: 5px;
+}
+
+button.btn:hover{
+    cursor: pointer;
+}
+
+.panel{
+    margin: 0 10px 10px 10px;
+    padding: 40px;
+    height: auto;
+    width: auto;
+    background-color: rgb(212, 208, 208);
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.locations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tab-panels{
+    margin: 0;
+    padding: 0;
+
+}
+
+.tabs{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0;
+}
+
+.tabs li{
+    padding-left: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgb(187, 179, 179);
+    border-radius:10px 10px 0 0;
+}
+
+.tabs li:hover{
+    cursor: pointer;
+}
+
+.tab-panels .tabs li.active{
+    background-color: grey;
+}
+
+.tab-panels .panel.active{
+    display: block;
+}
+
+.tab-panels .panel{
+    display: none;
+}
+
+
+/* contact CSS */
+
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#slider{
+    width: 400px;
+    height: 225px;
+    overflow: hidden;
+}
+
+#slider .slides{
+    display: block;
+    width: 6000px;
+    height: 225;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide{
+    float: left;
+    list-style-type: none;
+    width: 400;
+    height: 225px;
+    border-radius: 100px;
+    
+}
+
+
+/* menu CSS */
+
+ul li.commodity-item{
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul li .edit{
+    display: none;
+}
+
+ul li.edit .edit{
+    display: initial;
+}
+
+ul li.edit .noedit{
+    display: none;
+}
+
+ul li input{
+    width: 100px;
+}
+
+
+/* RESIPONSIVE RELUS
+
+@media screen and (max-width:750px){
+    .features{
+        display: block;
+    }
+} */
+
+/* FOOTER */
+
+footer{
+    background: black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: large;
+}

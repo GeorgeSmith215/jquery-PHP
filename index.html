@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="mobile"><a href="Locations.html">Locations</a></li>
+                <li class="mobile"><a href="Contact.html">Contact</a></li>
+                <li class="logo"><a href="index.html">Logo</a></li>
+                <li class="desktop"><a href="Locations.html">Locations</a></li>
+                <li class="desktop"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="features">
+        <figure>
+            <img src="images/cat.jpg" alt="a cat" id="cat-pic">
+            <a data-img="cat-pic" href="#" id="cat"><figcaption>A lovely cat</figcaption></a>
+        </figure>
+        <figure>
+            <img src="images/fish.jpg" alt="a fish" id="fish-pic">
+            <a data-img="fish-pic" href="#" id="fish"><figcaption>A lovely fish</figcaption></a>
+        </figure>
+        <figure>
+            <img src="images/frog.jpg" alt="a frog" id="frog-pic">
+            <a data-img="frog-pic" href="#" id="frog"><figcaption>A lovely frog</figcaption></a>
+        </figure>
+        
+    </section>
+    <section>
+        <p>
+            <input type="text" id="animal" placeholder="What's your favorite animal?">
+        </p>
+        <p id="result"></p>
+    </section>
+
+    <section>
+        <ul id="checklist">
+            <li>
+                <span>Apples</span>
+                <input type="text" value="Apples">
+            </li>
+            <li>
+                <span>Oranges</span>
+                <input type="text" value="Oranges">
+            </li>
+            <li>
+                <span>Bananas</span>
+                <input type="text" value="Bananas">
+            </li>
+        </ul>
+    </section>
+    <footer><p>George Smith</p></footer>
+
+    <script src="scripts/event.js"></script>
+</body>
+</html>
